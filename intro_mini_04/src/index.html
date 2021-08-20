@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <!-- 01. 기본경로 설정하기(이곳에 작성) -->
-        <link rel="stylesheet" href="./assets/" /> <!--경로 설정함-->
+        <base href="./assets/" /> <!--*피드백*<base>태그 사용* 경로 설정함-->
         <link
             href="https://fonts.googleapis.com/css?family=Montserrat|Nanum+Gothic&display=swap"
             rel="stylesheet"
@@ -41,8 +41,8 @@
                         <p>
                             <label>
                                 제목<br />
-                                <input type="text" name="subject" />
-                            </label>
+                                <input type="text" name="subject" placeholder="title"/>
+                            </label><!-- *피드백*placeholder로 사용자 경험성 높임*-->
                         </p>
                         <p>
                             <label>
@@ -51,7 +51,8 @@
                                     name="content"
                                     cols="55"
                                     rows="5"
-                                ></textarea><!-- 멀티라인 텍스트 -->
+                                    placeholder="txt"
+                                ></textarea><!-- *피드백*placeholder로 사용자 경험성 높임*멀티라인 텍스트 -->
                             </label>
                         </p>
                         <p>
