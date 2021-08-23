@@ -1,0 +1,49 @@
+body {  /* margin, padding 초기화 */
+  margin: 0;
+  padding: 0;
+}
+.header {/*header 글자색, 배경색*/
+  color : white;
+  background-color: #24292e;
+}
+.container {
+  padding: 16px; 
+  align-items: center;
+  display: flex;
+  
+}
+
+/* 피드백 : float를 사용하지 말고 flex or grid 사용 */
+.left{  
+  margin:0 100px 0 10px ;
+  display: flex;
+  align-items: center;
+}
+svg{
+  fill: white;
+}
+svg:hover{
+  fill: lightgray;
+}
+input{
+  border: whitesmoke 1px solid;
+  border-radius: 5px;
+  color:gray;
+  background-color: #24292e;
+  padding:10px;
+  }
+
+
+.menu-item {
+  margin: 0 auto;
+  display: inline-block;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding-right: 16px; /*메뉴간 간격조절*/
+  line-height: 1.5; /* 줄 높이, 행간과 비슷한 개념으로 이해할 수 있습니다. 기본 값은 normal이며 이는 약 1.2배 정도입니다. 그대로 유지하면 .menu-item의 높이가 약 35px이 되기 때문에 1배로 수정하여 32px로 .logo의 크기와 동일하게 작업합니다. */
+}
+.menu-item:hover{
+  color : lightgray;
+}
+
